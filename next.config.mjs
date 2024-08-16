@@ -4,6 +4,8 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
+    assetPrefix: '/site-lilou/',
+    basePath: '/site-lilou',
 };
 export default nextConfig;
 
