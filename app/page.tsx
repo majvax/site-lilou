@@ -7,24 +7,32 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useTheme } from 'next-themes'
 
+
+interface VocabularyItem {
+    word: string;
+    description: string;
+    references: string[];
+    keywords: string[];
+}
+
+
 export default function App() {
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedWord, setSelectedWord] = useState(null);
+    const [selectedWord, setSelectedWord] = useState<VocabularyItem | null>(null);
     const [isDialogOpen, setIsDialogOpen] = useState(false);
-    const [vocabularyData, setVocabularyData] = useState([]);
+    const [vocabularyData, setVocabularyData] = useState<VocabularyItem[]>([]);
     const [isLoading, setIsLoading] = useState(true);
     const { theme, setTheme } = useTheme()
-
 
 
     useEffect(() => {
         async function fetchVocabulary() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/majvax/site-lilou/master/vocabulary.json');
+                const response = await fetch('https://majvax.github.io/site-lilou/vocabulary.json');
                 if (!response.ok) {
                     throw new Error('Failed to fetch vocabulary data');
                 }
-                const data = await response.json();
+                const data = await response.json() as VocabularyItem[];
                 setVocabularyData(data);
             } catch (error) {
                 console.error('Error fetching vocabulary:', error);
@@ -42,12 +50,12 @@ export default function App() {
         setTheme(theme === 'light' ? 'dark' : 'light');
     };
 
-    const filteredWords = vocabularyData.filter(item =>
+    const filteredWords = vocabularyData.filter((item: VocabularyItem) =>
         item.word.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm.toLowerCase()))
     );
 
-    const openDialog = (word) => {
+    const openDialog = (word: VocabularyItem) => {
         setSelectedWord(word);
         setIsDialogOpen(true);
     };
