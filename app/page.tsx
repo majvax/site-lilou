@@ -20,7 +20,7 @@ export default function App() {
     useEffect(() => {
         async function fetchVocabulary() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/majvax/site-lilou/main/vocabulary.json');
+                const response = await fetch('https://raw.githubusercontent.com/majvax/site-lilou/master/vocabulary.json');
                 if (!response.ok) {
                     throw new Error('Failed to fetch vocabulary data');
                 }
