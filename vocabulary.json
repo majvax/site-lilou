@@ -538,5 +538,71 @@
         "description": "Le cloud computing est la fourniture de services informatiques (serveurs, stockage, bases de données, mise en réseau, logiciels) sur Internet ('le cloud').",
         "references": [],
         "keywords": ["services", "Internet", "infrastructure"]
+    },
+    {
+        "word": "upload",
+        "description": "L'upload est le processus de transfert de fichiers ou de données d'un ordinateur local vers un serveur ou un autre système distant.",
+        "references": [],
+        "keywords": ["transfert", "fichiers", "serveur"]
+    },
+    {
+        "word": "handle",
+        "description": "Un handle est un identifiant unique utilisé par le système d'exploitation Windows pour référencer des objets système tels que des fichiers, des fenêtres ou des ressources.",
+        "references": [],
+        "keywords": ["identifiant", "Windows", "ressources"]
+    },
+    {
+        "word": "stack",
+        "description": "La stack (pile) est une structure de données en mémoire qui fonctionne selon le principe LIFO (Last In, First Out), utilisée pour stocker des informations temporaires comme les adresses de retour et les variables locales.",
+        "references": [],
+        "keywords": ["mémoire", "LIFO", "temporaire"]
+    },
+    {
+        "word": "string",
+        "description": "Une string (chaîne de caractères) est une séquence de caractères utilisée pour représenter du texte dans les programmes informatiques.",
+        "references": [],
+        "keywords": ["texte", "caractères", "séquence"]
+    },
+    {
+        "word": "reboot",
+        "description": "Le reboot est le processus de redémarrage d'un système informatique, qui implique l'arrêt et le redémarrage du système d'exploitation.",
+        "references": [],
+        "keywords": ["redémarrage", "système", "opération"]
+    },
+    {
+        "word": "shell:startup",
+        "description": "La commande shell:startup est utilisée dans Windows pour ouvrir le dossier de démarrage, où les raccourcis des programmes à exécuter au démarrage du système peuvent être placés.",
+        "references": [],
+        "keywords": ["démarrage", "Windows", "raccourcis"]
+    },
+    {
+        "word": "call",
+        "description": "L'instruction ASM 'call' est utilisée pour appeler une procédure ou une fonction, en sauvegardant l'adresse de retour sur la pile.",
+        "references": [],
+        "keywords": ["ASM", "procédure", "pile"]
+    },
+    {
+        "word": "mov",
+        "description": "L'instruction ASM 'mov' est utilisée pour copier des données d'un emplacement à un autre, souvent entre registres ou entre un registre et une mémoire.",
+        "references": [],
+        "keywords": ["ASM", "copie", "données"]
+    },
+    {
+        "word": "buffer",
+        "description": "Un buffer est une zone de mémoire utilisée pour stocker temporairement des données en transit entre deux endroits ou processus.",
+        "references": [],
+        "keywords": ["mémoire", "stockage", "données"]
+    },
+    {
+        "word": "register asm gs",
+        "description": "Le registre GS en assembleur sous Windows est utilisé pour accéder à des structures spécifiques du système, comme le PEB (Process Environment Block).",
+        "references": [],
+        "keywords": ["registre", "Windows", "PEB"]
+    },
+    {
+        "word": "offset",
+        "description": "Un offset est une valeur qui représente la distance ou le décalage par rapport à un point de référence, souvent utilisé pour accéder à des données en mémoire.",
+        "references": [],
+        "keywords": ["décalage", "mémoire", "référence"]
     }
 ]
