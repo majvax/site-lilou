@@ -33,7 +33,7 @@ export default function App() {
                     throw new Error('Failed to fetch vocabulary data');
                 }
                 const data = await response.json() as VocabularyItem[];
-                setVocabularyData(data);
+                setVocabularyData(data.sort((a, b) => a.word.localCompare(b.word)););
             } catch (error) {
                 console.error('Error fetching vocabulary:', error);
                 // You might want to set some error state here
