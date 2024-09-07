@@ -1,4 +1,10 @@
 [
+   {
+        "word": "plugin",
+        "description": "Un plugin est un module qui ajoute des fonctionnalités à un logiciel existant.",
+        "references": [],
+        "keywords": ["extension", "fonctionnalités", "logiciel"]
+    },
     {
         "word": "mémoire",
         "description": "La mémoire est une ressource informatique utilisée pour stocker des données et des instructions de programme.",
