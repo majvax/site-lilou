@@ -1,614 +1,1226 @@
 [
-   {
-        "word": "plugin",
-        "description": "Un plugin est un module qui ajoute des fonctionnalités à un logiciel existant.",
-        "references": [],
-        "keywords": ["extension", "fonctionnalités", "logiciel"]
-    },
-    {
-        "word": "mémoire",
-        "description": "La mémoire est une ressource informatique utilisée pour stocker des données et des instructions de programme.",
-        "references": [],
-        "keywords": ["RAM", "stockage", "allocation"]
-    },
-    {
-        "word": "RAII",
-        "description": "RAII (Resource Acquisition Is Initialization) est un idiome de programmation C++ qui gère les ressources en les liant à la durée de vie des objets.",
-        "references": [],
-        "keywords": ["C++", "ressources", "gestion"]
-    },
-    {
-        "word": "pointeur",
-        "description": "Un pointeur est une variable qui stocke l'adresse mémoire d'une autre variable.",
-        "references": [],
-        "keywords": ["adresse", "mémoire", "C++"]
-    },
-    {
-        "word": "garbage collection",
-        "description": "Le garbage collection est un mécanisme de gestion automatique de la mémoire qui libère de la mémoire inutilisée.",
-        "references": [],
-        "keywords": ["JavaScript", "Python", "mémoire"]
-    },
-    {
-        "word": "compilation",
-        "description": "La compilation est le processus de traduction du code source en code machine exécutable.",
-        "references": [],
-        "keywords": ["C++", "C", "binaire"]
-    },
-    {
-        "word": "interpréteur",
-        "description": "Un interpréteur exécute directement les instructions écrites dans un langage de programmation.",
-        "references": [],
-        "keywords": ["Python", "JavaScript", "exécution"]
-    },
-    {
-        "word": "thread",
-        "description": "Un thread est la plus petite unité de traitement que peut gérer un système d'exploitation.",
-        "references": [],
-        "keywords": ["concurrence", "parallélisme", "C++"]
-    },
-    {
-        "word": "asynchrone",
-        "description": "L'asynchrone est un mode d'exécution où les opérations peuvent se dérouler indépendamment du flux principal du programme.",
-        "references": [],
-        "keywords": ["JavaScript", "promesses", "callback"]
-    },
-    {
-        "word": "fonction",
-        "description": "Une fonction est un bloc de code qui effectue une tâche spécifique et peut être réutilisé.",
-        "references": [],
-        "keywords": ["C++", "Python", "JavaScript"]
-    },
-    {
-        "word": "objet",
-        "description": "Un objet est une instance d'une classe qui encapsule des données et des comportements.",
-        "references": [],
-        "keywords": ["C++", "programmation orientée objet", "Python"]
-    },
-    {
-        "word": "API",
-        "description": "Une API (Application Programming Interface) est un ensemble de règles qui permet à différentes applications de communiquer entre elles.",
-        "references": [],
-        "keywords": ["interface", "communication", "services"]
-    },
-    {
-        "word": "DLL",
-        "description": "Une DLL (Dynamic Link Library) est un fichier contenant du code et des données pouvant être utilisés par plusieurs programmes simultanément.",
-        "references": [],
-        "keywords": ["bibliothèque", "partage", "Windows"]
-    },
-    {
-        "word": "EXE",
-        "description": "Un fichier EXE (exécutable) est un fichier contenant un programme qui peut être exécuté sur un système d'exploitation.",
-        "references": [],
-        "keywords": ["exécution", "programme", "Windows"]
-    },
-    {
-        "word": "PE EXECUTABLE",
-        "description": "Le format PE (Portable Executable) est un format de fichier pour les exécutables, les objets de code et les DLL sous Windows.",
-        "references": [],
-        "keywords": ["format", "Windows", "binaire"]
-    },
-    {
-        "word": "compilateur",
-        "description": "Un compilateur est un programme qui traduit le code source écrit dans un langage de programmation en code machine exécutable.",
-        "references": [],
-        "keywords": ["traduction", "binaire", "C++"]
-    },
-    {
-        "word": "débogage",
-        "description": "Le débogage est le processus de recherche et de correction des erreurs dans un programme informatique.",
-        "references": [],
-        "keywords": ["erreurs", "correction", "programme"]
-    },
-    {
-        "word": "framework",
-        "description": "Un framework est une structure de travail qui fournit un environnement de développement pour faciliter la création d'applications.",
-        "references": [],
-        "keywords": ["environnement", "développement", "outils"]
-    },
-    {
-        "word": "bibliothèque",
-        "description": "Une bibliothèque est un ensemble de fonctions et de routines réutilisables que les programmes peuvent appeler.",
-        "references": [],
-        "keywords": ["réutilisation", "fonctions", "code"]
-    },
-    {
-        "word": "algorithme",
-        "description": "Un algorithme est une série d'étapes logiques et ordonnées pour résoudre un problème ou accomplir une tâche.",
-        "references": [],
-        "keywords": ["résolution", "problème", "logique"]
-    },
-    {
-        "word": "variable",
-        "description": "Une variable est un espace de stockage nommé qui peut contenir une valeur modifiable pendant l'exécution d'un programme.",
-        "references": [],
-        "keywords": ["stockage", "valeur", "programmation"]
-    },
-    {
-        "word": "classe",
-        "description": "Une classe est un modèle définissant les propriétés et les comportements des objets créés à partir de celle-ci.",
-        "references": [],
-        "keywords": ["modèle", "objet", "programmation orientée objet"]
-    },
-    {
-        "word": "héritage",
-        "description": "L'héritage est un principe de programmation orientée objet où une classe peut hériter des propriétés et méthodes d'une autre classe.",
-        "references": [],
-        "keywords": ["programmation orientée objet", "classe", "propriétés"]
-    },
-    {
-        "word": "interface",
-        "description": "Une interface est une définition de méthodes qu'une classe doit implémenter, sans fournir l'implémentation elle-même.",
-        "references": [],
-        "keywords": ["contrat", "implémentation", "programmation orientée objet"]
-    },
-    {
-        "word": "recursion",
-        "description": "La récursion est une technique où une fonction s'appelle elle-même pour résoudre un problème.",
-        "references": [],
-        "keywords": ["fonction", "auto-appel", "résolution"]
-    },
-    {
-        "word": "encapsulation",
-        "description": "L'encapsulation est un principe de programmation orientée objet qui consiste à regrouper les données et les méthodes qui les manipulent au sein d'une même unité, généralement une classe.",
-        "references": [],
-        "keywords": ["programmation orientée objet", "classe", "données"]
-    },
-    {
-        "word": "polymorphisme",
-        "description": "Le polymorphisme est un concept de programmation orientée objet qui permet à des objets de différents types de répondre à la même interface ou méthode.",
-        "references": [],
-        "keywords": ["programmation orientée objet", "interface", "méthode"]
-    },
-    {
-        "word": "surcharge",
-        "description": "La surcharge est la capacité de définir plusieurs fonctions ou opérateurs avec le même nom mais des signatures différentes.",
-        "references": [],
-        "keywords": ["fonction", "opérateur", "signature"]
-    },
-    {
-        "word": "template",
-        "description": "Un template est une fonctionnalité de C++ qui permet de créer des fonctions ou des classes génériques.",
-        "references": [],
-        "keywords": ["C++", "générique", "fonction"]
-    },
-    {
-        "word": "namespace",
-        "description": "Un namespace est un conteneur qui permet de regrouper des identificateurs sous un nom commun pour éviter les conflits de noms.",
-        "references": [],
-        "keywords": ["C++", "identificateur", "conflit"]
-    },
-    {
-        "word": "threading",
-        "description": "Le threading est une technique de programmation qui permet l'exécution concurrente de plusieurs threads au sein d'un même processus.",
-        "references": [],
-        "keywords": ["concurrence", "parallélisme", "processus"]
-    },
-    {
-        "word": "mutex",
-        "description": "Un mutex est un objet de synchronisation utilisé pour éviter les conditions de course en permettant l'accès exclusif à une ressource partagée.",
-        "references": [],
-        "keywords": ["synchronisation", "ressource", "exclusif"]
-    },
-    {
-        "word": "callback",
-        "description": "Un callback est une fonction passée en argument à une autre fonction, qui est ensuite appelée à un moment donné.",
-        "references": [],
-        "keywords": ["fonction", "argument", "appel"]
-    },
-    {
-        "word": "JSON",
-        "description": "JSON (JavaScript Object Notation) est un format léger d'échange de données facile à lire et à écrire pour les humains et les machines.",
-        "references": [],
-        "keywords": ["données", "format", "JavaScript"]
-    },
-    {
-        "word": "REST",
-        "description": "REST (Representational State Transfer) est un style d'architecture pour les systèmes distribués, souvent utilisé pour concevoir des services web.",
-        "references": [],
-        "keywords": ["architecture", "services web", "HTTP"]
-    },
-    {
-        "word": "bool",
-        "description": "Un type booléen est un type de données qui peut prendre deux valeurs : vrai ou faux. En mémoire, il est généralement représenté par 1 octet.",
-        "references": [],
-        "keywords": ["vrai", "faux", "logique"]
-    },
-    {
-        "word": "int",
-        "description": "Un int (entier) est un type de données qui représente un nombre entier signé. Sa taille est généralement de 4 octets (32 bits) sur la plupart des architectures modernes.",
-        "references": [],
-        "keywords": ["entier", "signé", "nombre"]
-    },
-    {
-        "word": "uint",
-        "description": "Un uint (entier non signé) est un type de données qui représente un nombre entier positif. Sa taille est généralement de 4 octets (32 bits) sur la plupart des architectures modernes.",
-        "references": [],
-        "keywords": ["entier", "non signé", "positif"]
-    },
-    {
-        "word": "dword",
-        "description": "Un dword (double word) est un type de données qui occupe 4 octets (32 bits) en mémoire. Il est souvent utilisé pour représenter des entiers non signés.",
-        "references": [],
-        "keywords": ["32 bits", "entier", "non signé"]
-    },
-    {
-        "word": "word",
-        "description": "Un word est un type de données qui occupe 2 octets (16 bits) en mémoire. Il est souvent utilisé pour représenter des entiers non signés.",
-        "references": [],
-        "keywords": ["16 bits", "entier", "non signé"]
-    },
-    {
-        "word": "qword",
-        "description": "Un qword (quad word) est un type de données qui occupe 8 octets (64 bits) en mémoire. Il est souvent utilisé pour représenter des entiers non signés ou des adresses mémoire.",
-        "references": [],
-        "keywords": ["64 bits", "entier", "adresse"]
-    },
-    {
-        "word": "registre",
-        "description": "Un registre est une petite quantité de mémoire rapide située dans le processeur, utilisée pour stocker temporairement des données et des instructions.",
-        "references": [],
-        "keywords": ["processeur", "mémoire", "données"]
-    },
-    {
-        "word": "opcode",
-        "description": "Un opcode (code opération) est une partie d'une instruction en langage machine qui spécifie l'opération à effectuer.",
-        "references": [],
-        "keywords": ["instruction", "langage machine", "opération"]
-    },
-    {
-        "word": "pile",
-        "description": "La pile est une structure de données en mémoire qui fonctionne selon le principe LIFO (Last In, First Out), utilisée pour stocker des informations temporaires comme les adresses de retour et les variables locales.",
-        "references": [],
-        "keywords": ["mémoire", "LIFO", "temporaire"]
-    },
-    {
-        "word": "accumulateur",
-        "description": "Un accumulateur est un type de registre dans le processeur utilisé pour effectuer des opérations arithmétiques et logiques.",
-        "references": [],
-        "keywords": ["registre", "arithmétique", "logique"]
-    },
-    {
-        "word": "adresse",
-        "description": "Une adresse est une valeur qui identifie un emplacement spécifique en mémoire où des données peuvent être stockées ou récupérées.",
-        "references": [],
-        "keywords": ["mémoire", "emplacement", "données"]
-    },
-    {
-        "word": "instruction",
-        "description": "Une instruction est une commande en langage machine qui indique au processeur d'effectuer une opération spécifique.",
-        "references": [],
-        "keywords": ["commande", "processeur", "opération"]
-    },
-    {
-        "word": "segment",
-        "description": "Un segment est une partie de la mémoire divisée pour contenir des types spécifiques de données ou de code, comme le segment de code ou le segment de données.",
-        "references": [],
-        "keywords": ["mémoire", "division", "données"]
-    },
-    {
-        "word": "interruption",
-        "description": "Une interruption est un signal envoyé au processeur pour indiquer qu'un événement externe ou interne nécessite une attention immédiate.",
-        "references": [],
-        "keywords": ["signal", "processeur", "événement"]
-    },
-    {
-        "word": "compteur de programme",
-        "description": "Le compteur de programme est un registre qui contient l'adresse de la prochaine instruction à exécuter par le processeur.",
-        "references": [],
-        "keywords": ["registre", "adresse", "instruction"]
-    },
-    {
-        "word": "bus",
-        "description": "Un bus est un système de communication qui transfère des données entre les composants d'un ordinateur, comme le processeur, la mémoire et les périphériques.",
-        "references": [],
-        "keywords": ["communication", "transfert", "composants"]
-    },
-    {
-        "word": "machine virtuelle",
-        "description": "Une machine virtuelle est un environnement logiciel qui émule un ordinateur physique, permettant d'exécuter des systèmes d'exploitation et des applications.",
-        "references": [],
-        "keywords": ["émulation", "système d'exploitation", "environnement"]
-    },
-    {
-        "word": "open source",
-        "description": "Le logiciel open source est un type de logiciel dont le code source est librement accessible, modifiable et distribuable par quiconque.",
-        "references": [],
-        "keywords": ["logiciel", "code source", "libre"]
-    },
-    {
-        "word": "réseau",
-        "description": "Un réseau est un ensemble de dispositifs connectés entre eux pour partager des ressources et des informations.",
-        "references": [],
-        "keywords": ["connexion", "partage", "dispositifs"]
-    },
-    {
-        "word": "système d'exploitation",
-        "description": "Un système d'exploitation est un logiciel qui gère le matériel informatique et les ressources logicielles, et fournit des services communs pour les programmes informatiques. aka windows, linux, macOS, etc.",
-        "references": [],
-        "keywords": ["gestion", "matériel", "logiciel"]
-    },
-    {
-        "word": "persistance",
-        "description": "La persistance en informatique se réfère à la capacité d'un programme ou d'un processus à continuer d'exister et de fonctionner après un redémarrage du système ou une déconnexion de l'utilisateur.",
-        "references": [],
-        "keywords": ["continuité", "redémarrage", "système"]
-    },
-    {
-        "word": "UAC",
-        "description": "UAC (User Account Control) est une fonctionnalité de sécurité de Windows qui aide à prévenir les modifications non autorisées du système en demandant une autorisation ou un mot de passe administrateur.",
-        "references": [],
-        "keywords": ["sécurité", "Windows", "autorisation"]
-    },
-    {
-        "word": "regedit",
-        "description": "Regedit est un éditeur de registre Windows qui permet aux utilisateurs de visualiser et de modifier les paramètres du registre du système d'exploitation.",
-        "references": [],
-        "keywords": ["registre", "Windows", "paramètres"]
-    },
-    {
-        "word": "DLL proxying",
-        "description": "Le DLL proxying est une technique où une DLL malveillante imite une DLL légitime pour intercepter et modifier les appels de fonction.",
-        "references": [],
-        "keywords": ["interception", "modification", "fonction"]
-    },
-    {
-        "word": "DLL injection",
-        "description": "La DLL injection est une technique utilisée pour exécuter du code dans l'espace d'adressage d'un autre processus en forçant ce processus à charger une DLL.",
-        "references": [],
-        "keywords": ["exécution", "processus", "code"]
-    },
-    {
-        "word": "DLL hijacking",
-        "description": "Le DLL hijacking est une technique d'attaque où un attaquant place une DLL malveillante dans un emplacement où une application la chargera à la place de la DLL légitime.",
-        "references": [],
-        "keywords": ["attaque", "chargement", "malveillant"]
-    },
-    {
-        "word": "rootkit",
-        "description": "Un rootkit est un ensemble d'outils logiciels malveillants conçus pour permettre un accès non autorisé à un ordinateur tout en dissimulant leur présence.",
-        "references": [],
-        "keywords": ["malveillant", "accès", "dissimulation"]
-    },
-    {
-        "word": "phishing",
-        "description": "Le phishing est une technique de fraude visant à obtenir des informations sensibles en se faisant passer pour une entité de confiance dans une communication électronique.",
-        "references": [],
-        "keywords": ["fraude", "informations sensibles", "confiance"]
-    },
-    {
-        "word": "exploit",
-        "description": "Un exploit est un programme ou un code qui tire parti d'une vulnérabilité dans un logiciel ou un système pour exécuter des actions non autorisées.",
-        "references": [],
-        "keywords": ["vulnérabilité", "logiciel", "non autorisé"]
-    },
-    {
-        "word": "backdoor",
-        "description": "Une backdoor est une méthode contournant les mécanismes d'authentification normaux pour accéder à un système, souvent à des fins malveillantes.",
-        "references": [],
-        "keywords": ["accès", "contournement", "malveillant"]
-    },
-    {
-        "word": "socket",
-        "description": "Un socket est un point de terminaison pour la communication entre deux machines sur un réseau, permettant l'envoi et la réception de données.",
-        "references": [],
-        "keywords": ["communication", "réseau", "données"]
-    },
-    {
-        "word": "websocket",
-        "description": "WebSocket est un protocole de communication qui permet des interactions bidirectionnelles en temps réel entre un client et un serveur sur une seule connexion TCP.",
-        "references": [],
-        "keywords": ["bidirectionnel", "temps réel", "TCP"]
-    },
-    {
-        "word": "requête",
-        "description": "Une requête est une demande envoyée par un client à un serveur pour obtenir des ressources ou exécuter une action.",
-        "references": [],
-        "keywords": ["demande", "client", "serveur"]
-    },
-    {
-        "word": "POST",
-        "description": "POST est une méthode HTTP utilisée pour envoyer des données au serveur, souvent pour créer ou mettre à jour une ressource.",
-        "references": [],
-        "keywords": ["HTTP", "envoyer", "données"]
-    },
-    {
-        "word": "GET",
-        "description": "GET est une méthode HTTP utilisée pour demander une ressource spécifique à un serveur, sans modifier l'état du serveur.",
-        "references": [],
-        "keywords": ["HTTP", "demander", "ressource"]
-    },
-    {
-        "word": "DELETE",
-        "description": "DELETE est une méthode HTTP utilisée pour supprimer une ressource spécifique sur un serveur.",
-        "references": [],
-        "keywords": ["HTTP", "supprimer", "ressource"]
-    },
-    {
-        "word": "HTTP",
-        "description": "HTTP (Hypertext Transfer Protocol) est le protocole utilisé pour transférer des données sur le web, définissant comment les messages sont formatés et transmis.",
-        "references": [],
-        "keywords": ["protocole", "transfert", "web"]
-    },
-    {
-        "word": "HTTPS",
-        "description": "HTTPS (Hypertext Transfer Protocol Secure) est une version sécurisée de HTTP, utilisant le chiffrement SSL/TLS pour sécuriser les communications.",
-        "references": [],
-        "keywords": ["sécurisé", "chiffrement", "SSL/TLS"]
-    },
-    {
-        "word": "RESTful",
-        "description": "RESTful se réfère à un style d'architecture pour les services web qui utilise les méthodes HTTP et est basé sur les principes REST.",
-        "references": [],
-        "keywords": ["architecture", "services web", "HTTP"]
-    },
-    {
-        "word": "cookie",
-        "description": "Un cookie est un petit fichier de données stocké sur l'ordinateur de l'utilisateur par un site web pour garder une trace des informations de session et des préférences.",
-        "references": [],
-        "keywords": ["stockage", "session", "préférences"]
-    },
-    {
-        "word": "session",
-        "description": "Une session est une période de communication continue entre un utilisateur et un serveur, souvent utilisée pour maintenir l'état de l'utilisateur sur un site web.",
-        "references": [],
-        "keywords": ["communication", "état", "utilisateur"]
-    },
-    {
-        "word": "cache",
-        "description": "Le cache est un stockage temporaire de données pour accélérer les accès futurs aux mêmes données, souvent utilisé pour améliorer les performances des sites web.",
-        "references": [],
-        "keywords": ["stockage", "performances", "données"]
-    },
-    {
-        "word": "CDN",
-        "description": "Un CDN (Content Delivery Network) est un réseau de serveurs distribués qui délivre du contenu web aux utilisateurs en fonction de leur localisation géographique.",
-        "references": [],
-        "keywords": ["distribution", "serveurs", "contenu"]
-    },
-    {
-        "word": "AJAX",
-        "description": "AJAX (Asynchronous JavaScript and XML) est une technique de développement web pour créer des applications interactives en chargeant des données en arrière-plan sans recharger la page.",
-        "references": [],
-        "keywords": ["asynchrone", "interactif", "données"]
-    },
-    {
-        "word": "DOM",
-        "description": "Le DOM (Document Object Model) est une interface de programmation pour les documents HTML et XML, représentant la structure de la page sous forme d'arbre.",
-        "references": [],
-        "keywords": ["interface", "HTML", "structure"]
-    },
-    {
-        "word": "responsive design",
-        "description": "Le responsive design est une approche de conception web qui rend les pages web adaptables à différentes tailles d'écran et appareils.",
-        "references": [],
-        "keywords": ["adaptabilité", "conception", "écran"]
-    },
-    {
-        "word": "SEO",
-        "description": "SEO (Search Engine Optimization) est le processus d'optimisation d'un site web pour améliorer sa visibilité et son classement dans les résultats des moteurs de recherche.",
-        "references": [],
-        "keywords": ["optimisation", "visibilité", "moteurs de recherche"]
-    },
-    {
-        "word": "API REST",
-        "description": "Une API REST est une interface de programmation qui utilise les principes REST pour permettre la communication entre les systèmes via HTTP.",
-        "references": [],
-        "keywords": ["interface", "communication", "HTTP"]
-    },
-    {
-        "word": "microservices",
-        "description": "Les microservices sont une architecture logicielle où une application est structurée en une collection de services faiblement couplés et indépendants.",
-        "references": [],
-        "keywords": ["architecture", "services", "indépendance"]
-    },
-    {
-        "word": "virtualisation",
-        "description": "La virtualisation est la création de versions virtuelles de ressources informatiques, telles que des systèmes d'exploitation, des serveurs, des dispositifs de stockage, etc.",
-        "references": [],
-        "keywords": ["ressources", "systèmes", "serveurs"]
-    },
-    {
-        "word": "machine learning",
-        "description": "Le machine learning est un sous-ensemble de l'intelligence artificielle qui permet aux systèmes d'apprendre et de s'améliorer automatiquement à partir de l'expérience sans être explicitement programmés.",
-        "references": [],
-        "keywords": ["intelligence artificielle", "apprentissage", "automatique"]
-    },
-    {
-        "word": "big data",
-        "description": "Le big data fait référence à des ensembles de données extrêmement volumineux et complexes qui nécessitent des technologies avancées pour être traités et analysés.",
-        "references": [],
-        "keywords": ["données", "analyse", "technologies"]
-    },
-    {
-        "word": "blockchain",
-        "description": "La blockchain est une technologie de registre distribué qui enregistre des transactions de manière sécurisée, transparente et immuable.",
-        "references": [],
-        "keywords": ["registre", "sécurité", "transactions"]
-    },
-    {
-        "word": "cryptomonnaie",
-        "description": "Une cryptomonnaie est une monnaie numérique ou virtuelle qui utilise la cryptographie pour sécuriser les transactions et contrôler la création de nouvelles unités.",
-        "references": [],
-        "keywords": ["monnaie", "numérique", "sécurité"]
-    },
-    {
-        "word": "système embarqué",
-        "description": "Un système embarqué est un système informatique intégré dans un dispositif plus large, souvent avec des fonctions dédiées et en temps réel.",
-        "references": [],
-        "keywords": ["intégré", "temps réel", "dispositif"]
-    },
-    {
-        "word": "cloud computing",
-        "description": "Le cloud computing est la fourniture de services informatiques (serveurs, stockage, bases de données, mise en réseau, logiciels) sur Internet ('le cloud').",
-        "references": [],
-        "keywords": ["services", "Internet", "infrastructure"]
-    },
-    {
-        "word": "upload",
-        "description": "L'upload est le processus de transfert de fichiers ou de données d'un ordinateur local vers un serveur ou un autre système distant.",
-        "references": [],
-        "keywords": ["transfert", "fichiers", "serveur"]
-    },
-    {
-        "word": "handle",
-        "description": "Un handle est un identifiant unique utilisé par le système d'exploitation Windows pour référencer des objets système tels que des fichiers, des fenêtres ou des ressources.",
-        "references": [],
-        "keywords": ["identifiant", "Windows", "ressources"]
-    },
-    {
-        "word": "stack",
-        "description": "La stack (pile) est une structure de données en mémoire qui fonctionne selon le principe LIFO (Last In, First Out), utilisée pour stocker des informations temporaires comme les adresses de retour et les variables locales.",
-        "references": [],
-        "keywords": ["mémoire", "LIFO", "temporaire"]
-    },
-    {
-        "word": "string",
-        "description": "Une string (chaîne de caractères) est une séquence de caractères utilisée pour représenter du texte dans les programmes informatiques.",
-        "references": [],
-        "keywords": ["texte", "caractères", "séquence"]
-    },
-    {
-        "word": "reboot",
-        "description": "Le reboot est le processus de redémarrage d'un système informatique, qui implique l'arrêt et le redémarrage du système d'exploitation.",
-        "references": [],
-        "keywords": ["redémarrage", "système", "opération"]
-    },
-    {
-        "word": "shell:startup",
-        "description": "La commande shell:startup est utilisée dans Windows pour ouvrir le dossier de démarrage, où les raccourcis des programmes à exécuter au démarrage du système peuvent être placés.",
-        "references": [],
-        "keywords": ["démarrage", "Windows", "raccourcis"]
-    },
-    {
-        "word": "call",
-        "description": "L'instruction ASM 'call' est utilisée pour appeler une procédure ou une fonction, en sauvegardant l'adresse de retour sur la pile.",
-        "references": [],
-        "keywords": ["ASM", "procédure", "pile"]
-    },
-    {
-        "word": "mov",
-        "description": "L'instruction ASM 'mov' est utilisée pour copier des données d'un emplacement à un autre, souvent entre registres ou entre un registre et une mémoire.",
-        "references": [],
-        "keywords": ["ASM", "copie", "données"]
-    },
-    {
-        "word": "buffer",
-        "description": "Un buffer est une zone de mémoire utilisée pour stocker temporairement des données en transit entre deux endroits ou processus.",
-        "references": [],
-        "keywords": ["mémoire", "stockage", "données"]
-    },
-    {
-        "word": "register asm gs",
-        "description": "Le registre GS en assembleur sous Windows est utilisé pour accéder à des structures spécifiques du système, comme le PEB (Process Environment Block).",
-        "references": [],
-        "keywords": ["registre", "Windows", "PEB"]
-    },
     {
-        "word": "offset",
-        "description": "Un offset est une valeur qui représente la distance ou le décalage par rapport à un point de référence, souvent utilisé pour accéder à des données en mémoire.",
-        "references": [],
-        "keywords": ["décalage", "mémoire", "référence"]
+        "word":"plugin",
+        "description":"Un plugin est un module qui ajoute des fonctionnalités à un logiciel existant.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "extension",
+            "fonctionnalités",
+            "logiciel"
+        ]
+    },
+    {
+        "word":"mémoire",
+        "description":"La mémoire est une ressource informatique utilisée pour stocker des données et des instructions de programme.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "RAM",
+            "stockage",
+            "allocation"
+        ]
+    },
+    {
+        "word":"RAII",
+        "description":"RAII (Resource Acquisition Is Initialization) est un idiome de programmation C++ qui gère les ressources en les liant à la durée de vie des objets.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "C++",
+            "ressources",
+            "gestion"
+        ]
+    },
+    {
+        "word":"pointeur",
+        "description":"Un pointeur est une variable qui stocke l'adresse mémoire d'une autre variable.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "adresse",
+            "mémoire",
+            "C++"
+        ]
+    },
+    {
+        "word":"garbage collection",
+        "description":"Le garbage collection est un mécanisme de gestion automatique de la mémoire qui libère de la mémoire inutilisée.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "JavaScript",
+            "Python",
+            "mémoire"
+        ]
+    },
+    {
+        "word":"compilation",
+        "description":"La compilation est le processus de traduction du code source en code machine exécutable.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "C++",
+            "C",
+            "binaire"
+        ]
+    },
+    {
+        "word":"interpréteur",
+        "description":"Un interpréteur exécute directement les instructions écrites dans un langage de programmation.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "Python",
+            "JavaScript",
+            "exécution"
+        ]
+    },
+    {
+        "word":"thread",
+        "description":"Un thread est la plus petite unité de traitement que peut gérer un système d'exploitation.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "concurrence",
+            "parallélisme",
+            "C++"
+        ]
+    },
+    {
+        "word":"asynchrone",
+        "description":"L'asynchrone est un mode d'exécution où les opérations peuvent se dérouler indépendamment du flux principal du programme.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "JavaScript",
+            "promesses",
+            "callback"
+        ]
+    },
+    {
+        "word":"fonction",
+        "description":"Une fonction est un bloc de code qui effectue une tâche spécifique et peut être réutilisé.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "C++",
+            "Python",
+            "JavaScript"
+        ]
+    },
+    {
+        "word":"objet",
+        "description":"Un objet est une instance d'une classe qui encapsule des données et des comportements.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "C++",
+            "programmation orientée objet",
+            "Python"
+        ]
+    },
+    {
+        "word":"API",
+        "description":"Une API (Application Programming Interface) est un ensemble de règles qui permet à différentes applications de communiquer entre elles.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "interface",
+            "communication",
+            "services"
+        ]
+    },
+    {
+        "word":"DLL",
+        "description":"Une DLL (Dynamic Link Library) est un fichier contenant du code et des données pouvant être utilisés par plusieurs programmes simultanément.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "bibliothèque",
+            "partage",
+            "Windows"
+        ]
+    },
+    {
+        "word":"EXE",
+        "description":"Un fichier EXE (exécutable) est un fichier contenant un programme qui peut être exécuté sur un système d'exploitation.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "exécution",
+            "programme",
+            "Windows"
+        ]
+    },
+    {
+        "word":"PE EXECUTABLE",
+        "description":"Le format PE (Portable Executable) est un format de fichier pour les exécutables, les objets de code et les DLL sous Windows.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "format",
+            "Windows",
+            "binaire"
+        ]
+    },
+    {
+        "word":"compilateur",
+        "description":"Un compilateur est un programme qui traduit le code source écrit dans un langage de programmation en code machine exécutable.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "traduction",
+            "binaire",
+            "C++"
+        ]
+    },
+    {
+        "word":"débogage",
+        "description":"Le débogage est le processus de recherche et de correction des erreurs dans un programme informatique.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "erreurs",
+            "correction",
+            "programme"
+        ]
+    },
+    {
+        "word":"framework",
+        "description":"Un framework est une structure de travail qui fournit un environnement de développement pour faciliter la création d'applications.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "environnement",
+            "développement",
+            "outils"
+        ]
+    },
+    {
+        "word":"bibliothèque",
+        "description":"Une bibliothèque est un ensemble de fonctions et de routines réutilisables que les programmes peuvent appeler.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "réutilisation",
+            "fonctions",
+            "code"
+        ]
+    },
+    {
+        "word":"algorithme",
+        "description":"Un algorithme est une série d'étapes logiques et ordonnées pour résoudre un problème ou accomplir une tâche.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "résolution",
+            "problème",
+            "logique"
+        ]
+    },
+    {
+        "word":"variable",
+        "description":"Une variable est un espace de stockage nommé qui peut contenir une valeur modifiable pendant l'exécution d'un programme.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "stockage",
+            "valeur",
+            "programmation"
+        ]
+    },
+    {
+        "word":"classe",
+        "description":"Une classe est un modèle définissant les propriétés et les comportements des objets créés à partir de celle-ci.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "modèle",
+            "objet",
+            "programmation orientée objet"
+        ]
+    },
+    {
+        "word":"héritage",
+        "description":"L'héritage est un principe de programmation orientée objet où une classe peut hériter des propriétés et méthodes d'une autre classe.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "programmation orientée objet",
+            "classe",
+            "propriétés"
+        ]
+    },
+    {
+        "word":"interface",
+        "description":"Une interface est une définition de méthodes qu'une classe doit implémenter, sans fournir l'implémentation elle-même.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "contrat",
+            "implémentation",
+            "programmation orientée objet"
+        ]
+    },
+    {
+        "word":"recursion",
+        "description":"La récursion est une technique où une fonction s'appelle elle-même pour résoudre un problème.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "fonction",
+            "auto-appel",
+            "résolution"
+        ]
+    },
+    {
+        "word":"encapsulation",
+        "description":"L'encapsulation est un principe de programmation orientée objet qui consiste à regrouper les données et les méthodes qui les manipulent au sein d'une même unité, généralement une classe.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "programmation orientée objet",
+            "classe",
+            "données"
+        ]
+    },
+    {
+        "word":"polymorphisme",
+        "description":"Le polymorphisme est un concept de programmation orientée objet qui permet à des objets de différents types de répondre à la même interface ou méthode.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "programmation orientée objet",
+            "interface",
+            "méthode"
+        ]
+    },
+    {
+        "word":"surcharge",
+        "description":"La surcharge est la capacité de définir plusieurs fonctions ou opérateurs avec le même nom mais des signatures différentes.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "fonction",
+            "opérateur",
+            "signature"
+        ]
+    },
+    {
+        "word":"template",
+        "description":"Un template est une fonctionnalité de C++ qui permet de créer des fonctions ou des classes génériques.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "C++",
+            "générique",
+            "fonction"
+        ]
+    },
+    {
+        "word":"namespace",
+        "description":"Un namespace est un conteneur qui permet de regrouper des identificateurs sous un nom commun pour éviter les conflits de noms.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "C++",
+            "identificateur",
+            "conflit"
+        ]
+    },
+    {
+        "word":"threading",
+        "description":"Le threading est une technique de programmation qui permet l'exécution concurrente de plusieurs threads au sein d'un même processus.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "concurrence",
+            "parallélisme",
+            "processus"
+        ]
+    },
+    {
+        "word":"mutex",
+        "description":"Un mutex est un objet de synchronisation utilisé pour éviter les conditions de course en permettant l'accès exclusif à une ressource partagée.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "synchronisation",
+            "ressource",
+            "exclusif"
+        ]
+    },
+    {
+        "word":"callback",
+        "description":"Un callback est une fonction passée en argument à une autre fonction, qui est ensuite appelée à un moment donné.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "fonction",
+            "argument",
+            "appel"
+        ]
+    },
+    {
+        "word":"JSON",
+        "description":"JSON (JavaScript Object Notation) est un format léger d'échange de données facile à lire et à écrire pour les humains et les machines.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "données",
+            "format",
+            "JavaScript"
+        ]
+    },
+    {
+        "word":"REST",
+        "description":"REST (Representational State Transfer) est un style d'architecture pour les systèmes distribués, souvent utilisé pour concevoir des services web.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "architecture",
+            "services web",
+            "HTTP"
+        ]
+    },
+    {
+        "word":"bool",
+        "description":"Un type booléen est un type de données qui peut prendre deux valeurs : vrai ou faux. En mémoire, il est généralement représenté par 1 octet.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "vrai",
+            "faux",
+            "logique"
+        ]
+    },
+    {
+        "word":"int",
+        "description":"Un int (entier) est un type de données qui représente un nombre entier signé. Sa taille est généralement de 4 octets (32 bits) sur la plupart des architectures modernes.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "entier",
+            "signé",
+            "nombre"
+        ]
+    },
+    {
+        "word":"uint",
+        "description":"Un uint (entier non signé) est un type de données qui représente un nombre entier positif. Sa taille est généralement de 4 octets (32 bits) sur la plupart des architectures modernes.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "entier",
+            "non signé",
+            "positif"
+        ]
+    },
+    {
+        "word":"dword",
+        "description":"Un dword (double word) est un type de données qui occupe 4 octets (32 bits) en mémoire. Il est souvent utilisé pour représenter des entiers non signés.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "32 bits",
+            "entier",
+            "non signé"
+        ]
+    },
+    {
+        "word":"word",
+        "description":"Un word est un type de données qui occupe 2 octets (16 bits) en mémoire. Il est souvent utilisé pour représenter des entiers non signés.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "16 bits",
+            "entier",
+            "non signé"
+        ]
+    },
+    {
+        "word":"qword",
+        "description":"Un qword (quad word) est un type de données qui occupe 8 octets (64 bits) en mémoire. Il est souvent utilisé pour représenter des entiers non signés ou des adresses mémoire.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "64 bits",
+            "entier",
+            "adresse"
+        ]
+    },
+    {
+        "word":"registre",
+        "description":"Un registre est une petite quantité de mémoire rapide située dans le processeur, utilisée pour stocker temporairement des données et des instructions.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "processeur",
+            "mémoire",
+            "données"
+        ]
+    },
+    {
+        "word":"opcode",
+        "description":"Un opcode (code opération) est une partie d'une instruction en langage machine qui spécifie l'opération à effectuer.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "instruction",
+            "langage machine",
+            "opération"
+        ]
+    },
+    {
+        "word":"pile",
+        "description":"La pile est une structure de données en mémoire qui fonctionne selon le principe LIFO (Last In, First Out), utilisée pour stocker des informations temporaires comme les adresses de retour et les variables locales.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "mémoire",
+            "LIFO",
+            "temporaire"
+        ]
+    },
+    {
+        "word":"accumulateur",
+        "description":"Un accumulateur est un type de registre dans le processeur utilisé pour effectuer des opérations arithmétiques et logiques.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "registre",
+            "arithmétique",
+            "logique"
+        ]
+    },
+    {
+        "word":"adresse",
+        "description":"Une adresse est une valeur qui identifie un emplacement spécifique en mémoire où des données peuvent être stockées ou récupérées.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "mémoire",
+            "emplacement",
+            "données"
+        ]
+    },
+    {
+        "word":"instruction",
+        "description":"Une instruction est une commande en langage machine qui indique au processeur d'effectuer une opération spécifique.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "commande",
+            "processeur",
+            "opération"
+        ]
+    },
+    {
+        "word":"segment",
+        "description":"Un segment est une partie de la mémoire divisée pour contenir des types spécifiques de données ou de code, comme le segment de code ou le segment de données.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "mémoire",
+            "division",
+            "données"
+        ]
+    },
+    {
+        "word":"interruption",
+        "description":"Une interruption est un signal envoyé au processeur pour indiquer qu'un événement externe ou interne nécessite une attention immédiate.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "signal",
+            "processeur",
+            "événement"
+        ]
+    },
+    {
+        "word":"compteur de programme",
+        "description":"Le compteur de programme est un registre qui contient l'adresse de la prochaine instruction à exécuter par le processeur.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "registre",
+            "adresse",
+            "instruction"
+        ]
+    },
+    {
+        "word":"bus",
+        "description":"Un bus est un système de communication qui transfère des données entre les composants d'un ordinateur, comme le processeur, la mémoire et les périphériques.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "communication",
+            "transfert",
+            "composants"
+        ]
+    },
+    {
+        "word":"machine virtuelle",
+        "description":"Une machine virtuelle est un environnement logiciel qui émule un ordinateur physique, permettant d'exécuter des systèmes d'exploitation et des applications.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "émulation",
+            "système d'exploitation",
+            "environnement"
+        ]
+    },
+    {
+        "word":"open source",
+        "description":"Le logiciel open source est un type de logiciel dont le code source est librement accessible, modifiable et distribuable par quiconque.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "logiciel",
+            "code source",
+            "libre"
+        ]
+    },
+    {
+        "word":"réseau",
+        "description":"Un réseau est un ensemble de dispositifs connectés entre eux pour partager des ressources et des informations.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "connexion",
+            "partage",
+            "dispositifs"
+        ]
+    },
+    {
+        "word":"système d'exploitation",
+        "description":"Un système d'exploitation est un logiciel qui gère le matériel informatique et les ressources logicielles, et fournit des services communs pour les programmes informatiques. aka windows, linux, macOS, etc.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "gestion",
+            "matériel",
+            "logiciel"
+        ]
+    },
+    {
+        "word":"persistance",
+        "description":"La persistance en informatique se réfère à la capacité d'un programme ou d'un processus à continuer d'exister et de fonctionner après un redémarrage du système ou une déconnexion de l'utilisateur.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "continuité",
+            "redémarrage",
+            "système"
+        ]
+    },
+    {
+        "word":"UAC",
+        "description":"UAC (User Account Control) est une fonctionnalité de sécurité de Windows qui aide à prévenir les modifications non autorisées du système en demandant une autorisation ou un mot de passe administrateur.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "sécurité",
+            "Windows",
+            "autorisation"
+        ]
+    },
+    {
+        "word":"regedit",
+        "description":"Regedit est un éditeur de registre Windows qui permet aux utilisateurs de visualiser et de modifier les paramètres du registre du système d'exploitation.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "registre",
+            "Windows",
+            "paramètres"
+        ]
+    },
+    {
+        "word":"DLL proxying",
+        "description":"Le DLL proxying est une technique où une DLL malveillante imite une DLL légitime pour intercepter et modifier les appels de fonction.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "interception",
+            "modification",
+            "fonction"
+        ]
+    },
+    {
+        "word":"DLL injection",
+        "description":"La DLL injection est une technique utilisée pour exécuter du code dans l'espace d'adressage d'un autre processus en forçant ce processus à charger une DLL.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "exécution",
+            "processus",
+            "code"
+        ]
+    },
+    {
+        "word":"DLL hijacking",
+        "description":"Le DLL hijacking est une technique d'attaque où un attaquant place une DLL malveillante dans un emplacement où une application la chargera à la place de la DLL légitime.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "attaque",
+            "chargement",
+            "malveillant"
+        ]
+    },
+    {
+        "word":"rootkit",
+        "description":"Un rootkit est un ensemble d'outils logiciels malveillants conçus pour permettre un accès non autorisé à un ordinateur tout en dissimulant leur présence.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "malveillant",
+            "accès",
+            "dissimulation"
+        ]
+    },
+    {
+        "word":"phishing",
+        "description":"Le phishing est une technique de fraude visant à obtenir des informations sensibles en se faisant passer pour une entité de confiance dans une communication électronique.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "fraude",
+            "informations sensibles",
+            "confiance"
+        ]
+    },
+    {
+        "word":"exploit",
+        "description":"Un exploit est un programme ou un code qui tire parti d'une vulnérabilité dans un logiciel ou un système pour exécuter des actions non autorisées.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "vulnérabilité",
+            "logiciel",
+            "non autorisé"
+        ]
+    },
+    {
+        "word":"backdoor",
+        "description":"Une backdoor est une méthode contournant les mécanismes d'authentification normaux pour accéder à un système, souvent à des fins malveillantes.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "accès",
+            "contournement",
+            "malveillant"
+        ]
+    },
+    {
+        "word":"socket",
+        "description":"Un socket est un point de terminaison pour la communication entre deux machines sur un réseau, permettant l'envoi et la réception de données.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "communication",
+            "réseau",
+            "données"
+        ]
+    },
+    {
+        "word":"websocket",
+        "description":"WebSocket est un protocole de communication qui permet des interactions bidirectionnelles en temps réel entre un client et un serveur sur une seule connexion TCP.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "bidirectionnel",
+            "temps réel",
+            "TCP"
+        ]
+    },
+    {
+        "word":"requête",
+        "description":"Une requête est une demande envoyée par un client à un serveur pour obtenir des ressources ou exécuter une action.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "demande",
+            "client",
+            "serveur"
+        ]
+    },
+    {
+        "word":"POST",
+        "description":"POST est une méthode HTTP utilisée pour envoyer des données au serveur, souvent pour créer ou mettre à jour une ressource.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "HTTP",
+            "envoyer",
+            "données"
+        ]
+    },
+    {
+        "word":"GET",
+        "description":"GET est une méthode HTTP utilisée pour demander une ressource spécifique à un serveur, sans modifier l'état du serveur.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "HTTP",
+            "demander",
+            "ressource"
+        ]
+    },
+    {
+        "word":"DELETE",
+        "description":"DELETE est une méthode HTTP utilisée pour supprimer une ressource spécifique sur un serveur.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "HTTP",
+            "supprimer",
+            "ressource"
+        ]
+    },
+    {
+        "word":"HTTP",
+        "description":"HTTP (Hypertext Transfer Protocol) est le protocole utilisé pour transférer des données sur le web, définissant comment les messages sont formatés et transmis.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "protocole",
+            "transfert",
+            "web"
+        ]
+    },
+    {
+        "word":"HTTPS",
+        "description":"HTTPS (Hypertext Transfer Protocol Secure) est une version sécurisée de HTTP, utilisant le chiffrement SSL/TLS pour sécuriser les communications.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "sécurisé",
+            "chiffrement",
+            "SSL/TLS"
+        ]
+    },
+    {
+        "word":"RESTful",
+        "description":"RESTful se réfère à un style d'architecture pour les services web qui utilise les méthodes HTTP et est basé sur les principes REST.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "architecture",
+            "services web",
+            "HTTP"
+        ]
+    },
+    {
+        "word":"cookie",
+        "description":"Un cookie est un petit fichier de données stocké sur l'ordinateur de l'utilisateur par un site web pour garder une trace des informations de session et des préférences.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "stockage",
+            "session",
+            "préférences"
+        ]
+    },
+    {
+        "word":"session",
+        "description":"Une session est une période de communication continue entre un utilisateur et un serveur, souvent utilisée pour maintenir l'état de l'utilisateur sur un site web.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "communication",
+            "état",
+            "utilisateur"
+        ]
+    },
+    {
+        "word":"cache",
+        "description":"Le cache est un stockage temporaire de données pour accélérer les accès futurs aux mêmes données, souvent utilisé pour améliorer les performances des sites web.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "stockage",
+            "performances",
+            "données"
+        ]
+    },
+    {
+        "word":"CDN",
+        "description":"Un CDN (Content Delivery Network) est un réseau de serveurs distribués qui délivre du contenu web aux utilisateurs en fonction de leur localisation géographique.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "distribution",
+            "serveurs",
+            "contenu"
+        ]
+    },
+    {
+        "word":"AJAX",
+        "description":"AJAX (Asynchronous JavaScript and XML) est une technique de développement web pour créer des applications interactives en chargeant des données en arrière-plan sans recharger la page.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "asynchrone",
+            "interactif",
+            "données"
+        ]
+    },
+    {
+        "word":"DOM",
+        "description":"Le DOM (Document Object Model) est une interface de programmation pour les documents HTML et XML, représentant la structure de la page sous forme d'arbre.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "interface",
+            "HTML",
+            "structure"
+        ]
+    },
+    {
+        "word":"responsive design",
+        "description":"Le responsive design est une approche de conception web qui rend les pages web adaptables à différentes tailles d'écran et appareils.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "adaptabilité",
+            "conception",
+            "écran"
+        ]
+    },
+    {
+        "word":"SEO",
+        "description":"SEO (Search Engine Optimization) est le processus d'optimisation d'un site web pour améliorer sa visibilité et son classement dans les résultats des moteurs de recherche.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "optimisation",
+            "visibilité",
+            "moteurs de recherche"
+        ]
+    },
+    {
+        "word":"API REST",
+        "description":"Une API REST est une interface de programmation qui utilise les principes REST pour permettre la communication entre les systèmes via HTTP.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "interface",
+            "communication",
+            "HTTP"
+        ]
+    },
+    {
+        "word":"microservices",
+        "description":"Les microservices sont une architecture logicielle où une application est structurée en une collection de services faiblement couplés et indépendants.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "architecture",
+            "services",
+            "indépendance"
+        ]
+    },
+    {
+        "word":"virtualisation",
+        "description":"La virtualisation est la création de versions virtuelles de ressources informatiques, telles que des systèmes d'exploitation, des serveurs, des dispositifs de stockage, etc.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "ressources",
+            "systèmes",
+            "serveurs"
+        ]
+    },
+    {
+        "word":"machine learning",
+        "description":"Le machine learning est un sous-ensemble de l'intelligence artificielle qui permet aux systèmes d'apprendre et de s'améliorer automatiquement à partir de l'expérience sans être explicitement programmés.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "intelligence artificielle",
+            "apprentissage",
+            "automatique"
+        ]
+    },
+    {
+        "word":"big data",
+        "description":"Le big data fait référence à des ensembles de données extrêmement volumineux et complexes qui nécessitent des technologies avancées pour être traités et analysés.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "données",
+            "analyse",
+            "technologies"
+        ]
+    },
+    {
+        "word":"blockchain",
+        "description":"La blockchain est une technologie de registre distribué qui enregistre des transactions de manière sécurisée, transparente et immuable.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "registre",
+            "sécurité",
+            "transactions"
+        ]
+    },
+    {
+        "word":"cryptomonnaie",
+        "description":"Une cryptomonnaie est une monnaie numérique ou virtuelle qui utilise la cryptographie pour sécuriser les transactions et contrôler la création de nouvelles unités.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "monnaie",
+            "numérique",
+            "sécurité"
+        ]
+    },
+    {
+        "word":"système embarqué",
+        "description":"Un système embarqué est un système informatique intégré dans un dispositif plus large, souvent avec des fonctions dédiées et en temps réel.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "intégré",
+            "temps réel",
+            "dispositif"
+        ]
+    },
+    {
+        "word":"cloud computing",
+        "description":"Le cloud computing est la fourniture de services informatiques (serveurs, stockage, bases de données, mise en réseau, logiciels) sur Internet ('le cloud').",
+        "references":[
+            
+        ],
+        "keywords":[
+            "services",
+            "Internet",
+            "infrastructure"
+        ]
+    },
+    {
+        "word":"upload",
+        "description":"L'upload est le processus de transfert de fichiers ou de données d'un ordinateur local vers un serveur ou un autre système distant.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "transfert",
+            "fichiers",
+            "serveur"
+        ]
+    },
+    {
+        "word":"handle",
+        "description":"Un handle est un identifiant unique utilisé par le système d'exploitation Windows pour référencer des objets système tels que des fichiers, des fenêtres ou des ressources.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "identifiant",
+            "Windows",
+            "ressources"
+        ]
+    },
+    {
+        "word":"stack",
+        "description":"La stack (pile) est une structure de données en mémoire qui fonctionne selon le principe LIFO (Last In, First Out), utilisée pour stocker des informations temporaires comme les adresses de retour et les variables locales.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "mémoire",
+            "LIFO",
+            "temporaire"
+        ]
+    },
+    {
+        "word":"string",
+        "description":"Une string (chaîne de caractères) est une séquence de caractères utilisée pour représenter du texte dans les programmes informatiques.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "texte",
+            "caractères",
+            "séquence"
+        ]
+    },
+    {
+        "word":"reboot",
+        "description":"Le reboot est le processus de redémarrage d'un système informatique, qui implique l'arrêt et le redémarrage du système d'exploitation.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "redémarrage",
+            "système",
+            "opération"
+        ]
+    },
+    {
+        "word":"shell:startup",
+        "description":"La commande shell:startup est utilisée dans Windows pour ouvrir le dossier de démarrage, où les raccourcis des programmes à exécuter au démarrage du système peuvent être placés.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "démarrage",
+            "Windows",
+            "raccourcis"
+        ]
+    },
+    {
+        "word":"call",
+        "description":"L'instruction ASM 'call' est utilisée pour appeler une procédure ou une fonction, en sauvegardant l'adresse de retour sur la pile.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "ASM",
+            "procédure",
+            "pile"
+        ]
+    },
+    {
+        "word":"mov",
+        "description":"L'instruction ASM 'mov' est utilisée pour copier des données d'un emplacement à un autre, souvent entre registres ou entre un registre et une mémoire.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "ASM",
+            "copie",
+            "données"
+        ]
+    },
+    {
+        "word":"buffer",
+        "description":"Un buffer est une zone de mémoire utilisée pour stocker temporairement des données en transit entre deux endroits ou processus.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "mémoire",
+            "stockage",
+            "données"
+        ]
+    },
+    {
+        "word":"register asm gs",
+        "description":"Le registre GS en assembleur sous Windows est utilisé pour accéder à des structures spécifiques du système, comme le PEB (Process Environment Block).",
+        "references":[
+            
+        ],
+        "keywords":[
+            "registre",
+            "Windows",
+            "PEB"
+        ]
+    },
+    {
+        "word":"offset",
+        "description":"Un offset est une valeur qui représente la distance ou le décalage par rapport à un point de référence, souvent utilisé pour accéder à des données en mémoire.",
+        "references":[
+            
+        ],
+        "keywords":[
+            "décalage",
+            "mémoire",
+            "référence"
+        ]
     }
 ]
